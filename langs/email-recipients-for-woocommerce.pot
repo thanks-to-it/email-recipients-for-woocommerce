@@ -1,0 +1,126 @@
+#: includes/class-alg-wc-email-recipients.php:131
+msgid "Settings"
+msgstr ""
+
+#: includes/class-alg-wc-email-recipients.php:134
+msgid "Go Pro"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:25
+msgid "Forwarding"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:40
+msgid "Email Forwarding Options"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:41
+msgid "Forward all WooCommerce emails."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:46
+msgid "Email forwarding"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:47
+#: includes/settings/class-alg-wc-email-recipients-settings-general.php:50
+msgid "Enable section"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:60
+msgid "Cc"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:61
+msgid ""
+"Cc (carbon copy) field indicates secondary recipients whose names are "
+"visible to one another and to the principal."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:66
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:94
+msgid "Email(s)"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:67
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:95
+#: includes/settings/class-alg-wc-email-recipients-settings-general.php:41
+msgid "Comma separated list of emails."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:67
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:95
+msgid "Ignored if empty."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:74
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:102
+msgid "Order status"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:75
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:103
+msgid ""
+"If you want to forward only order emails and only with selected statuses, "
+"set them here."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:76
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:104
+msgid "Leave empty to forward for all emails and order statuses."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:88
+msgid "Bcc"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:89
+msgid ""
+"Bcc (blind carbon copy) field indicates tertiary recipients whose names are "
+"invisible to each other and to the primary and secondary recipients."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-general.php:25
+msgid "Recipients"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-general.php:40
+msgid "Email Recipients Options"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-general.php:42
+#, php-format
+msgid "Available placeholders: %s."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-general.php:44
+msgid "Leave empty for the default WooCommerce value."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-general.php:49
+msgid "Email recipients"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings.php:25
+msgid "Email Recipients"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings.php:43
+msgid "Reset Settings"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings.php:48
+msgid "Reset section settings"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings.php:49
+msgid "Reset"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings.php:50
+msgid "Check the box and save changes to reset."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings.php:89
+msgid "Your settings have been reset."
+msgstr ""
