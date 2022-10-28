@@ -1,5 +1,37 @@
-#: includes/class-alg-wc-email-recipients.php:131
-msgid "Settings"
+# Copyright (C) 2022 WPFactory
+# This file is distributed under the same license as the Email Recipients for WooCommerce Pro plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: email-recipients-for-woocommerce 1.2.1-dev\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/email-recipients-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-10-28T03:24:18+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: email-recipients-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+msgid "Email Recipients for WooCommerce Pro"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wpfactory.com/item/email-recipients-for-woocommerce/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Set custom recipients for WooCommerce emails."
+msgstr ""
+
+#. Author of the plugin
+msgid "WPFactory"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpfactory.com"
 msgstr ""
 
 #: includes/class-alg-wc-email-recipients.php:134
@@ -32,9 +64,7 @@ msgid "Cc"
 msgstr ""
 
 #: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:61
-msgid ""
-"Cc (carbon copy) field indicates secondary recipients whose names are "
-"visible to one another and to the principal."
+msgid "Cc (carbon copy) field indicates secondary recipients whose names are visible to one another and to the principal."
 msgstr ""
 
 #: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:66
@@ -60,9 +90,7 @@ msgstr ""
 
 #: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:75
 #: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:103
-msgid ""
-"If you want to forward only order emails and only with selected statuses, "
-"set them here."
+msgid "If you want to forward only order emails and only with selected statuses, set them here."
 msgstr ""
 
 #: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:76
@@ -75,9 +103,7 @@ msgid "Bcc"
 msgstr ""
 
 #: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:89
-msgid ""
-"Bcc (blind carbon copy) field indicates tertiary recipients whose names are "
-"invisible to each other and to the primary and secondary recipients."
+msgid "Bcc (blind carbon copy) field indicates tertiary recipients whose names are invisible to each other and to the primary and secondary recipients."
 msgstr ""
 
 #: includes/settings/class-alg-wc-email-recipients-settings-general.php:25
@@ -89,7 +115,6 @@ msgid "Email Recipients Options"
 msgstr ""
 
 #: includes/settings/class-alg-wc-email-recipients-settings-general.php:42
-#, php-format
 msgid "Available placeholders: %s."
 msgstr ""
 
