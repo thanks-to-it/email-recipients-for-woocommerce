@@ -2,7 +2,7 @@
 /**
  * Email Recipients for WooCommerce - Forwarding Section Settings
  *
- * @version 1.2.0
+ * @version 1.2.1
  * @since   1.2.0
  *
  * @author  Algoritmika Ltd
@@ -29,7 +29,7 @@ class Alg_WC_Email_Recipients_Settings_Forwarding extends Alg_WC_Email_Recipient
 	/**
 	 * get_settings.
 	 *
-	 * @version 1.2.0
+	 * @version 1.2.1
 	 * @since   1.2.0
 	 *
 	 * @todo    [next] (desc) section desc?
@@ -69,6 +69,7 @@ class Alg_WC_Email_Recipients_Settings_Forwarding extends Alg_WC_Email_Recipient
 				'default'  => '',
 				'type'     => 'text',
 				'css'      => 'width:100%;',
+				'alg_wc_er_sanitize' => 'textarea',
 			),
 			array(
 				'title'    => __( 'Order status', 'email-recipients-for-woocommerce' ),
@@ -97,6 +98,7 @@ class Alg_WC_Email_Recipients_Settings_Forwarding extends Alg_WC_Email_Recipient
 				'default'  => '',
 				'type'     => 'text',
 				'css'      => 'width:100%;',
+				'alg_wc_er_sanitize' => 'textarea',
 			),
 			array(
 				'title'    => __( 'Order status', 'email-recipients-for-woocommerce' ),

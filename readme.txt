@@ -26,7 +26,8 @@ Set custom recipients for WooCommerce emails.
 
 == Changelog ==
 
-= 1.2.1 - 27/10/2022 =
+= 1.2.1 - 28/10/2022 =
+* Fix - Placeholders were not properly saved in admin settings. This is fixed now.
 * WC tested up to: 7.0.
 * Tested up to: 6.0.
 * Readme.txt updated.

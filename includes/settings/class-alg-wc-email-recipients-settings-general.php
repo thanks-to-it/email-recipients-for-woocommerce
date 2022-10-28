@@ -2,7 +2,7 @@
 /**
  * Email Recipients for WooCommerce - General Section Settings
  *
- * @version 1.2.0
+ * @version 1.2.1
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd
@@ -29,7 +29,7 @@ class Alg_WC_Email_Recipients_Settings_General extends Alg_WC_Email_Recipients_S
 	/**
 	 * get_settings.
 	 *
-	 * @version 1.2.0
+	 * @version 1.2.1
 	 * @since   1.0.0
 	 *
 	 * @todo    [next] (desc) section desc?
@@ -63,6 +63,7 @@ class Alg_WC_Email_Recipients_Settings_General extends Alg_WC_Email_Recipients_S
 						'default'  => '',
 						'type'     => 'text',
 						'css'      => 'width:100%;',
+						'alg_wc_er_sanitize' => 'textarea',
 					),
 				) );
 			}

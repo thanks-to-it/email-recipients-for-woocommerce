@@ -2,7 +2,7 @@
 /**
  * Email Recipients for WooCommerce - Settings
  *
- * @version 1.2.0
+ * @version 1.2.1
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd
@@ -17,17 +17,41 @@ class Alg_WC_Email_Recipients_Settings extends WC_Settings_Page {
 	/**
 	 * Constructor.
 	 *
-	 * @version 1.2.0
+	 * @version 1.2.1
 	 * @since   1.0.0
 	 */
 	function __construct() {
+
 		$this->id    = 'alg_wc_email_recipients';
 		$this->label = __( 'Email Recipients', 'email-recipients-for-woocommerce' );
 		parent::__construct();
+
+		add_filter( 'woocommerce_admin_settings_sanitize_option', array( $this, 'alg_wc_er_sanitize' ), PHP_INT_MAX, 3 );
+
 		// Sections
 		require_once( 'class-alg-wc-email-recipients-settings-section.php' );
 		require_once( 'class-alg-wc-email-recipients-settings-general.php' );
 		require_once( 'class-alg-wc-email-recipients-settings-forwarding.php' );
+
+	}
+
+	/**
+	 * alg_wc_er_sanitize.
+	 *
+	 * @version 1.2.1
+	 * @since   1.2.1
+	 */
+	function alg_wc_er_sanitize( $value, $option, $raw_value ) {
+		if ( ! empty( $option['alg_wc_er_sanitize'] ) ) {
+			switch ( $option['alg_wc_er_sanitize'] ) {
+				case 'textarea':
+					return wp_kses_post( trim( $raw_value ) );
+				default:
+					$func = $option['alg_wc_er_sanitize'];
+					return ( function_exists( $func ) ? $func( $raw_value ) : $value );
+			}
+		}
+		return $value;
 	}
 
 	/**
