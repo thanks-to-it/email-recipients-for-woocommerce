@@ -1,9 +1,9 @@
 === Email Recipients for WooCommerce ===
-Contributors: wpcodefactory, algoritmika, anbinder, omardabbas, kousikmukherjeeli
+Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmukherjeeli
 Tags: woocommerce, emails, email, recipient, woo commerce
 Requires at least: 4.4
-Tested up to: 6.2
-Stable tag: 1.2.2
+Tested up to: 6.3
+Stable tag: 1.2.3
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -25,6 +25,11 @@ Set custom recipients for WooCommerce emails.
 3. Start by visiting plugin settings at "WooCommerce > Settings > Email Recipients".
 
 == Changelog ==
+
+= 1.2.3 - 25/09/2023 =
+* WC tested up to: 8.1.
+* Tested up to: 6.3.
+* Update plugin icon, banner.
 
 = 1.2.2 - 19/06/2023 =
 * WC tested up to: 7.8.
