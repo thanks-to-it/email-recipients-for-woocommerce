@@ -1,8 +1,8 @@
-#: includes/class-alg-wc-email-recipients.php:131
+#: includes/class-alg-wc-email-recipients.php:160
 msgid "Settings"
 msgstr ""
 
-#: includes/class-alg-wc-email-recipients.php:134
+#: includes/class-alg-wc-email-recipients.php:163
 msgid "Go Pro"
 msgstr ""
 
@@ -27,54 +27,100 @@ msgstr ""
 msgid "Enable section"
 msgstr ""
 
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:60
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:57
 msgid "Cc"
 msgstr ""
 
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:61
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:58
 msgid ""
 "Cc (carbon copy) field indicates secondary recipients whose names are "
 "visible to one another and to the principal."
 msgstr ""
 
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:66
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:95
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:63
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:114
 msgid "Email(s)"
 msgstr ""
 
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:67
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:96
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:64
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:115
 #: includes/settings/class-alg-wc-email-recipients-settings-general.php:41
 msgid "Comma separated list of emails."
 msgstr ""
 
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:67
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:96
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:64
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:115
 msgid "Ignored if empty."
 msgstr ""
 
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:75
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:104
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:72
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:123
 msgid "Order status"
 msgstr ""
 
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:76
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:105
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:73
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:124
 msgid ""
 "If you want to forward only order emails and only with selected statuses, "
 "set them here."
 msgstr ""
 
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:77
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:106
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:74
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:125
 msgid "Leave empty to forward for all emails and order statuses."
 msgstr ""
 
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:89
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:85
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:136
+msgid "Order downloadable products"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:86
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:137
+msgid ""
+"If you want to forward only order emails and only with selected downloadable "
+"products condition, set it here."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:87
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:138
+msgid "Leave empty to forward all emails."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:94
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:145
+msgid "Always forward"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:95
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:146
+#: includes/settings/class-alg-wc-email-recipients-settings-section.php:69
+msgid "Forward only when all order products are downloadable"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:96
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:147
+#: includes/settings/class-alg-wc-email-recipients-settings-section.php:70
+msgid "Forward only when at least one order product is downloadable"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:97
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:148
+#: includes/settings/class-alg-wc-email-recipients-settings-section.php:71
+msgid "Forward only when all order products are not downloadable"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:98
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:149
+#: includes/settings/class-alg-wc-email-recipients-settings-section.php:72
+msgid "Forward only when at least one order product is not downloadable"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:108
 msgid "Bcc"
 msgstr ""
 
-#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:90
+#: includes/settings/class-alg-wc-email-recipients-settings-forwarding.php:109
 msgid ""
 "Bcc (blind carbon copy) field indicates tertiary recipients whose names are "
 "invisible to each other and to the primary and secondary recipients."
@@ -99,6 +145,16 @@ msgstr ""
 
 #: includes/settings/class-alg-wc-email-recipients-settings-general.php:49
 msgid "Email recipients"
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-section.php:64
+#, php-format
+msgid "Statuses: %s."
+msgstr ""
+
+#: includes/settings/class-alg-wc-email-recipients-settings-section.php:68
+#, php-format
+msgid "Available conditions: %s"
 msgstr ""
 
 #: includes/settings/class-alg-wc-email-recipients-settings.php:26

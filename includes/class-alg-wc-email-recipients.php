@@ -2,7 +2,7 @@
 /**
  * Email Recipients for WooCommerce - Main Class
  *
- * @version 1.2.0
+ * @version 1.3.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd
@@ -21,6 +21,13 @@ final class Alg_WC_Email_Recipients {
 	 * @since 1.0.0
 	 */
 	public $version = ALG_WC_EMAIL_RECIPIENTS_VERSION;
+
+	/**
+	 * core.
+	 *
+	 * @since 1.3.0
+	 */
+	public $core;
 
 	/**
 	 * @var   Alg_WC_Email_Recipients The single instance of the class
@@ -49,7 +56,7 @@ final class Alg_WC_Email_Recipients {
 	/**
 	 * Alg_WC_Email_Recipients Constructor.
 	 *
-	 * @version 1.2.0
+	 * @version 1.3.0
 	 * @since   1.0.0
 	 *
 	 * @access  public
@@ -63,6 +70,9 @@ final class Alg_WC_Email_Recipients {
 
 		// Set up localisation
 		add_action( 'init', array( $this, 'localize' ) );
+
+		// Declare compatibility with custom order tables for WooCommerce
+		add_action( 'before_woocommerce_init', array( $this, 'wc_declare_compatibility' ) );
 
 		// Pro
 		if ( 'email-recipients-for-woocommerce-pro.php' === basename( ALG_WC_EMAIL_RECIPIENTS_FILE ) ) {
@@ -87,6 +97,25 @@ final class Alg_WC_Email_Recipients {
 	 */
 	function localize() {
 		load_plugin_textdomain( 'email-recipients-for-woocommerce', false, dirname( plugin_basename( ALG_WC_EMAIL_RECIPIENTS_FILE ) ) . '/langs/' );
+	}
+
+	/**
+	 * wc_declare_compatibility.
+	 *
+	 * @version 1.3.0
+	 * @since   1.3.0
+	 *
+	 * @see     https://github.com/woocommerce/woocommerce/wiki/High-Performance-Order-Storage-Upgrade-Recipe-Book#declaring-extension-incompatibility
+	 */
+	function wc_declare_compatibility() {
+		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			$files = ( defined( 'ALG_WC_EMAIL_RECIPIENTS_FILE_FREE' ) ?
+				array( ALG_WC_EMAIL_RECIPIENTS_FILE, ALG_WC_EMAIL_RECIPIENTS_FILE_FREE ) :
+				array( ALG_WC_EMAIL_RECIPIENTS_FILE ) );
+			foreach ( $files as $file ) {
+				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', $file, true );
+			}
+		}
 	}
 
 	/**

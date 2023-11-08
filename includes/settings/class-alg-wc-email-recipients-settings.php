@@ -2,7 +2,7 @@
 /**
  * Email Recipients for WooCommerce - Settings
  *
- * @version 1.2.1
+ * @version 1.3.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd
@@ -105,12 +105,12 @@ class Alg_WC_Email_Recipients_Settings extends WC_Settings_Page {
 	/**
 	 * admin_notices_settings_reset_success.
 	 *
-	 * @version 1.0.0
+	 * @version 1.3.0
 	 * @since   1.0.0
 	 */
 	function admin_notices_settings_reset_success() {
 		echo '<div class="notice notice-success is-dismissible"><p><strong>' .
-			__( 'Your settings have been reset.', 'email-recipients-for-woocommerce' ) . '</strong></p></div>';
+			esc_html__( 'Your settings have been reset.', 'email-recipients-for-woocommerce' ) . '</strong></p></div>';
 	}
 
 	/**
