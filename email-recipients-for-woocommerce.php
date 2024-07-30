@@ -3,12 +3,13 @@
 Plugin Name: Email Recipients for WooCommerce
 Plugin URI: https://wpfactory.com/item/email-recipients-for-woocommerce/
 Description: Set custom recipients for WooCommerce emails.
-Version: 1.3.0
+Version: 1.3.1
 Author: WPFactory
 Author URI: https://wpfactory.com
 Text Domain: email-recipients-for-woocommerce
 Domain Path: /langs
-WC tested up to: 8.2
+WC tested up to: 9.1
+Requires Plugins: woocommerce
 */
 
 defined( 'ABSPATH' ) || exit;
@@ -30,7 +31,7 @@ if ( 'email-recipients-for-woocommerce.php' === basename( __FILE__ ) ) {
 	}
 }
 
-defined( 'ALG_WC_EMAIL_RECIPIENTS_VERSION' ) || define( 'ALG_WC_EMAIL_RECIPIENTS_VERSION', '1.3.0' );
+defined( 'ALG_WC_EMAIL_RECIPIENTS_VERSION' ) || define( 'ALG_WC_EMAIL_RECIPIENTS_VERSION', '1.3.1' );
 
 defined( 'ALG_WC_EMAIL_RECIPIENTS_FILE' ) || define( 'ALG_WC_EMAIL_RECIPIENTS_FILE', __FILE__ );
 

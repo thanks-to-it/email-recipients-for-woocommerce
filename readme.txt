@@ -2,8 +2,8 @@
 Contributors: wpcodefactory, algoritmika, anbinder, karzin, omardabbas, kousikmukherjeeli
 Tags: woocommerce, emails, email, recipient, woo commerce
 Requires at least: 4.4
-Tested up to: 6.3
-Stable tag: 1.3.0
+Tested up to: 6.6
+Stable tag: 1.3.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -29,6 +29,10 @@ Set custom recipients for WooCommerce emails.
 3. Start by visiting plugin settings at "WooCommerce > Settings > Email Recipients".
 
 == Changelog ==
+
+= 1.3.1 - 30/07/2024 =
+* WC tested up to: 9.1.
+* Tested up to: 6.6.
 
 = 1.3.0 - 08/11/2023 =
 * Dev - Forwarding - Moved to the free version ("Email(s)" options).
