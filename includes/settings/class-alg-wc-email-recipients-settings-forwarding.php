@@ -8,7 +8,7 @@
  * @author  Algoritmika Ltd
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Email_Recipients_Settings_Forwarding' ) ) :
 
@@ -70,9 +70,11 @@ class Alg_WC_Email_Recipients_Settings_Forwarding extends Alg_WC_Email_Recipient
 			),
 			array(
 				'title'              => __( 'Order status', 'email-recipients-for-woocommerce' ),
-				'desc_tip'           => __( 'If you want to forward only order emails and only with selected statuses, set them here.', 'email-recipients-for-woocommerce' ) . ' ' .
-						__( 'Leave empty to forward for all emails and order statuses.', 'email-recipients-for-woocommerce' ) .
-					$this->get_pro_desc( 'status' ),
+				'desc_tip'           => (
+					__( 'If you want to forward only order emails and only with selected statuses, set them here.', 'email-recipients-for-woocommerce' ) . ' ' .
+					__( 'Leave empty to forward for all emails and order statuses.', 'email-recipients-for-woocommerce' ) .
+					$this->get_pro_desc( 'status' )
+				),
 				'id'                 => 'alg_wc_email_recipients_cc_order_status',
 				'default'            => array(),
 				'type'               => 'multiselect',
@@ -83,9 +85,11 @@ class Alg_WC_Email_Recipients_Settings_Forwarding extends Alg_WC_Email_Recipient
 			),
 			array(
 				'title'              => __( 'Order downloadable products', 'email-recipients-for-woocommerce' ),
-				'desc_tip'           => __( 'If you want to forward only order emails and only with selected downloadable products condition, set it here.', 'email-recipients-for-woocommerce' ) . ' ' .
-						__( 'Leave empty to forward all emails.', 'email-recipients-for-woocommerce' ) .
-					$this->get_pro_desc( 'downloadable' ),
+				'desc_tip'           => (
+					__( 'If you want to forward only order emails and only with selected downloadable products condition, set it here.', 'email-recipients-for-woocommerce' ) . ' ' .
+					__( 'Leave empty to forward all emails.', 'email-recipients-for-woocommerce' ) .
+					$this->get_pro_desc( 'downloadable' )
+				),
 				'id'                 => 'alg_wc_email_recipients_cc_order_downloadable_products',
 				'default'            => '',
 				'type'               => 'select',
@@ -121,9 +125,11 @@ class Alg_WC_Email_Recipients_Settings_Forwarding extends Alg_WC_Email_Recipient
 			),
 			array(
 				'title'              => __( 'Order status', 'email-recipients-for-woocommerce' ),
-				'desc_tip'           => __( 'If you want to forward only order emails and only with selected statuses, set them here.', 'email-recipients-for-woocommerce' ) . ' ' .
-						__( 'Leave empty to forward for all emails and order statuses.', 'email-recipients-for-woocommerce' ) .
-					$this->get_pro_desc( 'status' ),
+				'desc_tip'           => (
+					__( 'If you want to forward only order emails and only with selected statuses, set them here.', 'email-recipients-for-woocommerce' ) . ' ' .
+					__( 'Leave empty to forward for all emails and order statuses.', 'email-recipients-for-woocommerce' ) .
+					$this->get_pro_desc( 'status' )
+				),
 				'id'                 => 'alg_wc_email_recipients_bcc_order_status',
 				'default'            => array(),
 				'type'               => 'multiselect',
@@ -134,9 +140,11 @@ class Alg_WC_Email_Recipients_Settings_Forwarding extends Alg_WC_Email_Recipient
 			),
 			array(
 				'title'              => __( 'Order downloadable products', 'email-recipients-for-woocommerce' ),
-				'desc_tip'           => __( 'If you want to forward only order emails and only with selected downloadable products condition, set it here.', 'email-recipients-for-woocommerce' ) . ' ' .
-						__( 'Leave empty to forward all emails.', 'email-recipients-for-woocommerce' ) .
-					$this->get_pro_desc( 'downloadable' ),
+				'desc_tip'           => (
+					__( 'If you want to forward only order emails and only with selected downloadable products condition, set it here.', 'email-recipients-for-woocommerce' ) . ' ' .
+					__( 'Leave empty to forward all emails.', 'email-recipients-for-woocommerce' ) .
+					$this->get_pro_desc( 'downloadable' )
+				),
 				'id'                 => 'alg_wc_email_recipients_bcc_order_downloadable_products',
 				'default'            => '',
 				'type'               => 'select',

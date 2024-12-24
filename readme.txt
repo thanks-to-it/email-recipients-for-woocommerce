@@ -1,8 +1,8 @@
-=== Email Recipients for WooCommerce ===
-Contributors: wpcodefactory, algoritmika, anbinder, karzin, omardabbas, kousikmukherjeeli
+=== Multiple Email Recipients for WooCommerce ===
+Contributors: wpcodefactory, algoritmika, anbinder, karzin, omardabbas
 Tags: woocommerce, emails, email, recipient, woo commerce
 Requires at least: 4.4
-Tested up to: 6.6
+Tested up to: 6.7
 Stable tag: 1.3.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -30,6 +30,16 @@ Set custom recipients for WooCommerce emails.
 
 == Changelog ==
 
+= 1.4.0 - 24/12/2024 =
+* Dev - Plugin settings moved to the "WPFactory" menu.
+* Dev - "Recommendations" added.
+* Dev - "Key Manager" added.
+* Dev - Code refactoring.
+* Dev - Coding standards improved.
+* WC tested up to: 9.5.
+* Tested up to: 6.7.
+* Plugin name updated.
+
 = 1.3.1 - 30/07/2024 =
 * WC tested up to: 9.1.
 * Tested up to: 6.6.
@@ -37,6 +47,7 @@ Set custom recipients for WooCommerce emails.
 = 1.3.0 - 08/11/2023 =
 * Dev - Forwarding - Moved to the free version ("Email(s)" options).
 * Dev – "High-Performance Order Storage (HPOS)" compatibility.
+* Dev - PHP 8.2 compatibility - "Creation of dynamic property is deprecated" notice fixed.
 * Dev - Code refactoring.
 * Dev - Pro - Forwarding - "Order downloadable products" options added.
 * WC tested up to: 8.2.

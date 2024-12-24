@@ -8,7 +8,7 @@
  * @author  Algoritmika Ltd
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Email_Recipients_Settings_General' ) ) :
 
@@ -38,10 +38,15 @@ class Alg_WC_Email_Recipients_Settings_General extends Alg_WC_Email_Recipients_S
 		$settings = array(
 			array(
 				'title' => __( 'Email Recipients Options', 'email-recipients-for-woocommerce' ),
-				'desc'  => __( 'Comma separated list of emails.', 'email-recipients-for-woocommerce' ) . ' ' .
-					sprintf( __( 'Available placeholders: %s.', 'email-recipients-for-woocommerce' ),
-						'<code>' . implode( '</code>, <code>', array( '%customer%', '%admin%', '%default%' ) ) . '</code>' ) . ' ' .
-					__( 'Leave empty for the default WooCommerce value.', 'email-recipients-for-woocommerce' ),
+				'desc'  => (
+					__( 'Comma separated list of emails.', 'email-recipients-for-woocommerce' ) . ' ' .
+					sprintf(
+						/* Translators: %s: Placeholder list. */
+						__( 'Available placeholders: %s.', 'email-recipients-for-woocommerce' ),
+						'<code>' . implode( '</code>, <code>', array( '%customer%', '%admin%', '%default%' ) ) . '</code>'
+					) . ' ' .
+					__( 'Leave empty for the default WooCommerce value.', 'email-recipients-for-woocommerce' )
+				),
 				'type'  => 'title',
 				'id'    => 'alg_wc_email_recipients_options',
 			),

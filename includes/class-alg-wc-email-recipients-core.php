@@ -8,7 +8,7 @@
  * @author  Algoritmika Ltd
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Email_Recipients_Core' ) ) :
 
@@ -90,7 +90,11 @@ class Alg_WC_Email_Recipients_Core {
 	 * @todo    (feature) per email (i.e., per `$id`) (same in `add_cc_email()`)
 	 */
 	function add_bcc_email( $email_headers, $id, $_object ) {
-		return ( apply_filters( 'alg_wc_email_recipients_do_forward', true, $_object, 'bcc' ) ? $email_headers . "Bcc: " . $this->bcc_email . "\r\n" : $email_headers );
+		return (
+			apply_filters( 'alg_wc_email_recipients_do_forward', true, $_object, 'bcc' ) ?
+			$email_headers . "Bcc: " . $this->bcc_email . "\r\n" :
+			$email_headers
+		);
 	}
 
 	/**
@@ -100,7 +104,11 @@ class Alg_WC_Email_Recipients_Core {
 	 * @since   1.1.0
 	 */
 	function add_cc_email( $email_headers, $id, $_object ) {
-		return ( apply_filters( 'alg_wc_email_recipients_do_forward', true, $_object, 'cc' ) ? $email_headers . "Cc: " . $this->cc_email . "\r\n" : $email_headers );
+		return (
+			apply_filters( 'alg_wc_email_recipients_do_forward', true, $_object, 'cc' ) ?
+			$email_headers . "Cc: " . $this->cc_email . "\r\n" :
+			$email_headers
+		);
 	}
 
 	/**

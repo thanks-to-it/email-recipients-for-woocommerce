@@ -2,13 +2,13 @@
 /**
  * Email Recipients for WooCommerce - Settings
  *
- * @version 1.3.0
+ * @version 1.4.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Email_Recipients_Settings' ) ) :
 
@@ -17,7 +17,7 @@ class Alg_WC_Email_Recipients_Settings extends WC_Settings_Page {
 	/**
 	 * Constructor.
 	 *
-	 * @version 1.2.1
+	 * @version 1.4.0
 	 * @since   1.0.0
 	 */
 	function __construct() {
@@ -29,9 +29,9 @@ class Alg_WC_Email_Recipients_Settings extends WC_Settings_Page {
 		add_filter( 'woocommerce_admin_settings_sanitize_option', array( $this, 'alg_wc_er_sanitize' ), PHP_INT_MAX, 3 );
 
 		// Sections
-		require_once( 'class-alg-wc-email-recipients-settings-section.php' );
-		require_once( 'class-alg-wc-email-recipients-settings-general.php' );
-		require_once( 'class-alg-wc-email-recipients-settings-forwarding.php' );
+		require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-email-recipients-settings-section.php';
+		require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-email-recipients-settings-general.php';
+		require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-email-recipients-settings-forwarding.php';
 
 	}
 
@@ -110,7 +110,8 @@ class Alg_WC_Email_Recipients_Settings extends WC_Settings_Page {
 	 */
 	function admin_notices_settings_reset_success() {
 		echo '<div class="notice notice-success is-dismissible"><p><strong>' .
-			esc_html__( 'Your settings have been reset.', 'email-recipients-for-woocommerce' ) . '</strong></p></div>';
+			esc_html__( 'Your settings have been reset.', 'email-recipients-for-woocommerce' ) .
+		'</strong></p></div>';
 	}
 
 	/**
