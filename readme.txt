@@ -3,7 +3,7 @@ Contributors: wpcodefactory, algoritmika, anbinder, karzin, omardabbas
 Tags: woocommerce, emails, email, recipient, woo commerce
 Requires at least: 4.4
 Tested up to: 6.7
-Stable tag: 1.3.1
+Stable tag: 1.4.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -30,7 +30,7 @@ Set custom recipients for WooCommerce emails.
 
 == Changelog ==
 
-= 1.4.0 - 24/12/2024 =
+= 1.4.0 - 25/12/2024 =
 * Dev - Plugin settings moved to the "WPFactory" menu.
 * Dev - "Recommendations" added.
 * Dev - "Key Manager" added.
@@ -43,6 +43,7 @@ Set custom recipients for WooCommerce emails.
 = 1.3.1 - 30/07/2024 =
 * WC tested up to: 9.1.
 * Tested up to: 6.6.
+* WooCommerce added to the "Requires Plugins" (plugin header).
 
 = 1.3.0 - 08/11/2023 =
 * Dev - Forwarding - Moved to the free version ("Email(s)" options).
