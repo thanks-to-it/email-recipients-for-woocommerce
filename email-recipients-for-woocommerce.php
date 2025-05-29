@@ -1,14 +1,15 @@
 <?php
 /*
 Plugin Name: Multiple Email Recipients for WooCommerce
-Plugin URI: https://wpfactory.com/item/email-recipients-for-woocommerce/
+Plugin URI: https://wordpress.org/plugins/email-recipients-for-woocommerce/
 Description: Set custom recipients for WooCommerce emails.
-Version: 1.4.1
-Author: WPFactory
-Author URI: https://wpfactory.com
+Version: 2.0.0
+Author: Algoritmika Ltd
+Author URI: https://profiles.wordpress.org/algoritmika/
 Text Domain: email-recipients-for-woocommerce
 Domain Path: /langs
-WC tested up to: 9.6
+WC tested up to: 9.8
+Requires Plugins: woocommerce
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -32,7 +33,7 @@ if ( 'email-recipients-for-woocommerce.php' === basename( __FILE__ ) ) {
 	}
 }
 
-defined( 'ALG_WC_EMAIL_RECIPIENTS_VERSION' ) || define( 'ALG_WC_EMAIL_RECIPIENTS_VERSION', '1.4.1' );
+defined( 'ALG_WC_EMAIL_RECIPIENTS_VERSION' ) || define( 'ALG_WC_EMAIL_RECIPIENTS_VERSION', '2.0.0' );
 
 defined( 'ALG_WC_EMAIL_RECIPIENTS_FILE' ) || define( 'ALG_WC_EMAIL_RECIPIENTS_FILE', __FILE__ );
 
